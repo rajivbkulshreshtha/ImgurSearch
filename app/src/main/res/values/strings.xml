@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name">ImgurSearch</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_title">Image Title</string>
+	<string name="label_comment">Comment</string>
+	<string name="label_comment_here">Comment here!</string>
+	<string name="label_submit">SUBMIT</string>
+	<string name="label_toolbar_title">Imgur Search</string>
+	<string name="label_toolbar_detail_placeholder_title">Imgur Search</string>
+	<string name="failed_valid_comment">Please enter a valid comment</string>
+	<string name="failed_save_comment">Unable to save your comment</string>
+	<string name="success_save_comment">Comment saved successfully</string>
+	<string name="failed_unknown_error">An unknown error occurred.</string>
+	<string name="failed_something_went_wrong">Something went wrong, Please try again.</string>
+</resources>

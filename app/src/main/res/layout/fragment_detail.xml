@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/container_background"
+	tools:context=".ui.main.view.fragment.DetailFragment">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/colorPrimary"
+		android:minHeight="?attr/actionBarSize"
+		android:theme="?attr/actionBarTheme"
+		app:layout_constraintBottom_toTopOf="@+id/imageView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:navigationIcon="@drawable/ic_back"
+		app:titleTextColor="@color/colorText" />
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginHorizontal="20dp"
+		android:layout_marginTop="20dp"
+		app:layout_constraintBottom_toTopOf="@+id/cardView"
+		app:layout_constraintDimensionRatio="2:1.5"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/toolbar"
+		tools:src="@android:color/transparent" />
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cardView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="20dp"
+		android:layout_marginTop="32dp"
+		android:backgroundTint="@color/colorDark"
+		android:elevation="5dp"
+		app:cardCornerRadius="6dp"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintStart_toStartOf="@+id/imageView"
+		app:layout_constraintTop_toBottomOf="@id/imageView">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="15dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_comment"
+				android:textColor="@color/colorText"
+				android:textSize="25sp"
+				android:textStyle="bold" />
+
+			<EditText
+				android:id="@+id/etComment"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginVertical="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/comment_background"
+				android:hint="@string/label_comment_here"
+				android:inputType="textMultiLine|textNoSuggestions"
+				android:minHeight="70dp"
+				android:padding="10dp"
+				android:textColorHint="@color/colorTextSuggestion" />
+
+			<Button
+				android:id="@+id/btSubmit"
+				android:layout_width="wrap_content"
+				android:layout_height="35dp"
+				android:layout_gravity="right"
+				android:background="@drawable/button_background"
+				android:elevation="5dp"
+				android:text="@string/label_submit"
+				android:textColor="@color/colorText" />
+		</LinearLayout>
+
+
+	</androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
